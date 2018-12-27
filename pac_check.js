@@ -9,13 +9,12 @@ var browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER")
 var capabilities = {
 "browserstack.local": browserstackLocal,
  "browserstack.localIdentifier": browserstackLocalIdentifier,
- 'build' : 'build1.0', 
 "browserName" : "Chrome", 
 "browserVersion" : "70.0", 
 "os" : "Windows", 
 "os_version" : "10", 
- 'browserstack.user' : 'amitpunjabi2',
- 'browserstack.key' : 'Mh65Ccnrq1FMNyocsdfP'
+ 'browserstack.user' : username,
+ 'browserstack.key' : accessKey
 }
 
 var driver = new webdriver.Builder().
