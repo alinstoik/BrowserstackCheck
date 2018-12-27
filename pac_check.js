@@ -1,8 +1,14 @@
 var webdriver = require('selenium-webdriver');
 
+var username = System.getenv("BROWSERSTACK_USERNAME");
+var accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+var browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
+var browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
+
 // Input capabilities
 var capabilities = {
-'browserstack.local' : 'true',
+"browserstack.local": browserstackLocal,
+ "browserstack.localIdentifier": browserstackLocalIdentifier,
  'build' : 'build1.0', 
 "browserName" : "Chrome", 
 "browserVersion" : "70.0", 
