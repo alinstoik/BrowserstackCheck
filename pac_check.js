@@ -1,9 +1,9 @@
 var webdriver = require('selenium-webdriver');
 
-var username = System.getenv("BROWSERSTACK_USERNAME");
-var accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
-var browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
-var browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
+var username = process.env.BROWSERSTACK_USERNAME
+var accessKey = process.env.BROWSERSTACK_ACCESS_KEY
+var browserstackLocal = process.env.BROWSERSTACK_LOCAL
+var browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
 
 // Input capabilities
 var capabilities = {
