@@ -12,6 +12,7 @@ var capabilities = {
  "browserstack.localIdentifier": browserstackLocalIdentifier,
 "browserName" : "Chrome", 
 "browserVersion" : "70.0", 
+ "build":"AM_Check1"
  "build": build1,
 "os" : "Windows", 
 "os_version" : "10", 
