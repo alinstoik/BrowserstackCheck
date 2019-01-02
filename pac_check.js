@@ -11,6 +11,7 @@ var capabilities = {
  "browserstack.localIdentifier": browserstackLocalIdentifier,
 "browserName" : "Chrome", 
 "browserVersion" : "70.0", 
+ "build":"AM_Java",
 "os" : "Windows", 
 "os_version" : "10", 
  'browserstack.user' : username,
