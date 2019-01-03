@@ -4,7 +4,7 @@ var username = process.env.BROWSERSTACK_USERNAME
 var accessKey = process.env.BROWSERSTACK_ACCESS_KEY
 var browserstackLocal = process.env.BROWSERSTACK_LOCAL
 var browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
-// var build1 = process.env.BROWSERSTACK_BUILD
+var build1 = process.env.BROWSERSTACK_BUILD
 
 // Input capabilities
 var capabilities = {
@@ -13,7 +13,7 @@ var capabilities = {
 "browserName" : "Chrome", 
 "browserVersion" : "70.0", 
  "build":"AM_Check1",
-//  "build": build1,
+ "build": build1,
 "os" : "Windows", 
 "os_version" : "10", 
  'browserstack.user' : username,
