@@ -10,6 +10,7 @@ var build1 = process.env.BROWSERSTACK_BUILD
 var capabilities = {
 "browserstack.local": browserstackLocal,
  "browserstack.localIdentifier": browserstackLocalIdentifier,
+'browserName' : 'iPhone',
 'os_version' : '12',
 'device' : 'iPhone XS Max',
 'real_mobile' : 'true',
