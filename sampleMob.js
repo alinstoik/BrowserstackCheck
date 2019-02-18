@@ -33,5 +33,4 @@ driver.get('http://www.google.com').then(function(){
       driver.quit();
     });
   });
-});driver.takeScreenshot()
-driver.quit()
+});
