@@ -12,12 +12,13 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- script: npm install
+- script: npm install selenium-webdriver
+- script: node sampleMob.js
+- script: node pac_check.js
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    npm install
-    npm install selenium-webdriver
-    node sampleMob.js
-    node pac_check.js
   displayName: 'Run a multi-line script'
