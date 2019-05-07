@@ -6,8 +6,7 @@
 trigger:
 - master
 
-pool:
-  name: Hosted VS2017
+
 steps:
 - task: browserstackcom.browserstack-vsts-extension.browserstack-config-task.BrowserStackConfig@0
   displayName: 'BrowserStack configuration setup'
