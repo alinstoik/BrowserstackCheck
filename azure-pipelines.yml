@@ -18,6 +18,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: npm install
+- script: npm install browserstack-local
 - script: npm install selenium-webdriver
 - script: export BROWSERSTACK_USERNAME="abhishekmordani2"
 - script: export BROWSERSTACK_ACCESS_KEY="fmoKDwWonczWxsfT4egK"
