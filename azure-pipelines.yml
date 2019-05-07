@@ -14,8 +14,8 @@ steps:
   displayName: 'Run a one-line script'
 - script: npm install
 - script: npm install selenium-webdriver
--script: export BROWSERSTACK_USERNAME="abhishekmordani2"
--script: export BROWSERSTACK_ACCESS_KEY="fmoKDwWonczWxsfT4egK"
+- script: export BROWSERSTACK_USERNAME="abhishekmordani2"
+- script: export BROWSERSTACK_ACCESS_KEY="fmoKDwWonczWxsfT4egK"
 - script: node sampleMob.js
 - script: node pac_check.js
 
