@@ -10,6 +10,12 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
+- task: browserstackcom.browserstack-vsts-extension.browserstack-config-task.BrowserStackConfig@0
+  displayName: 'BrowserStack configuration setup'
+  inputs:
+    BrowserStackServiceEndPoint: 'BrowserStack Connection'
+    browserstackLocal: true
+    bsLocalOptions: '{"verbose": true, "forceLocal": true}'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: npm install
