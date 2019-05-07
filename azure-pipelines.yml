@@ -10,6 +10,10 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
+- task: BrowserStackConfig@0
+  inputs:
+    browserstackLocal: true
+    bsLocalOptions: '{"verbose": true, "forceLocal": true}'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: npm install
