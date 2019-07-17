@@ -25,6 +25,6 @@ var driver = new webdriver.Builder().
   withCapabilities(capabilities).
   build();
 
-driver.get('https://time.is/')
+driver.get('https://portal.t2xuks.tyl.usetyl.com/login')
 driver.takeScreenshot()
 driver.quit()
