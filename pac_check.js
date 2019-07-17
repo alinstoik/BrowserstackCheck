@@ -26,5 +26,6 @@ var driver = new webdriver.Builder().
   build();
 
 driver.get('https://portal.t2xuks.tyl.usetyl.com/login')
+driver.wait(function() {return driver.executeScript('return document.readyState').then(function(readyState){return readyState === 'complete'; });});
 driver.takeScreenshot()
 driver.quit()
