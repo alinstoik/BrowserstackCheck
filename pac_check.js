@@ -27,6 +27,11 @@ var driver = new webdriver.Builder().
 
 driver.get('https://portal.t3x.tyl.usetyl.com/')
 // driver.get('https://portal.d03.tyl.usetyl.com/')
+var wait = new WebDriverWait(driver, 20);
+var logo = driver.findElement(By.id('logo-image'))
+wait.until(ExpectedConditions.visibilityOf(logo))
+
+driver.takeScreenshot()
 driver.wait(function() {return driver.executeScript('return document.readyState').then(function(readyState){return readyState === 'complete'; });});
 driver.takeScreenshot()
 driver.quit()
