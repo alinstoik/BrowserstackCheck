@@ -27,5 +27,6 @@ var driver = new webdriver.Builder().
 
 driver.get('https://portal.t3x.tyl.usetyl.com/')
 driver.wait(function() {return driver.executeScript('return document.readyState').then(function(readyState){return readyState === 'complete'; });});
+driver.wait(5000)
 driver.takeScreenshot()
 driver.quit()
