@@ -25,8 +25,8 @@ var driver = new webdriver.Builder().
   withCapabilities(capabilities).
   build();
 
-// driver.get('https://portal.t3x.tyl.usetyl.com/')
-driver.get('https://portal.d03.tyl.usetyl.com/')
+driver.get('https://portal.t3x.tyl.usetyl.com/')
+// driver.get('https://portal.d03.tyl.usetyl.com/')
 
 driver.takeScreenshot()
 driver.wait(function() {return driver.executeScript('return document.readyState').then(function(readyState){return readyState === 'complete'; });});
